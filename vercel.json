@@ -36,6 +36,5 @@
             
             "dest": "server.js"
           }
-      ],
-      "framework": "express"
+      ]
   }
