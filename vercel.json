@@ -33,6 +33,10 @@
           {
             "src": "/data",
             "dest": "server.js"
+          },
+          {
+            "src": "/notes",
+            "dest": "server.js"
           }
       ]
   }
