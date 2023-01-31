@@ -73,6 +73,7 @@ app.get("/data", (req, res) => {
 })
 
 app.get("/allNotes/dokugo90@gmail.com", (req, res) => {
+    res.send("Got data")
     const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
     
 
