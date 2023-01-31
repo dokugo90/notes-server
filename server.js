@@ -56,14 +56,14 @@ app.get("/", (req, res) => {
     res.send("My server")
 })
 
-app.get("/dokugo90@gmail.com", (req, res) => {
+app.get("/data", (req, res) => {
     const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
 
     usersNotes.find(function(err, notes) {
         if (err) {
             res.send(err)
         } else {
-            res.json(notes)
+            res.send(notes)
         }
     })
 })
