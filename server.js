@@ -73,17 +73,17 @@ app.get("/data", (req, res) => {
 })
 
 app.get("/notes", (req, res) => {
-    /*const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
+    const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
 
     usersNotes.find(function(err, notes) {
         if (err) {
             console.log(err)
+            res.send(err)
         } else {
             res.send(notes)
             console.log("sent data")
         }
-    })*/
-    res.send("Fetch data")
+    })
 })
 
 app.get("/allNotes/dokugo90@gmail.com", (req, res) => {
