@@ -36,7 +36,7 @@ mongoose.connect("mongodb://localhost:27017/notesApp", {
     useNewUrlParser: true,
 });
 
-mongoose.set("strictQuery", true)
+mongoose.set("strictQuery", false)
 
 const notesSchema = new mongoose.Schema({
     title: {
