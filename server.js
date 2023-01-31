@@ -36,6 +36,8 @@ mongoose.connect("mongodb://localhost:27017/notesApp", {
     useNewUrlParser: true,
 });
 
+mongoose.set("strictQuery", true)
+
 const notesSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -74,7 +76,6 @@ app.get("/data", (req, res) => {
 
 app.get("/notes", (req, res) => {
     const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
-    mongoose.set("strictQuery", true)
 
     usersNotes.find(function(err, notes) {
         if (err) {
