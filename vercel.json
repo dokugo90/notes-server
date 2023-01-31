@@ -10,35 +10,28 @@
     ],
     "routes": [
         {
-          
             "src": "/hello",
-            
             "dest": "server.js"
-          },
+        },
         {
           
             "src": "/deleteNote/:email/:title",
-            
             "dest": "server.js"
-          },
-          {
+        },
+        {
             "src": "/note/:email",
-            
             "dest": "server.js"
-          },
-          {
+        },
+        {
             "src": "/saveNote/:email/:title/:description",
-            
             "dest": "server.js"
-          },
-          {
+        },
+        {
             "src": "/allNotes/dokugo90@gmail.com",
-            
             "dest": "server.js"
-          },
+        },
           {
             "src": "/data",
-            
             "dest": "server.js"
           }
       ]

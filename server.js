@@ -72,10 +72,22 @@ app.get("/data", (req, res) => {
     res.send("it works")
 })
 
+app.get("/notes", (req, res) => {
+    const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
+
+    usersNotes.find(function(err, notes) {
+        if (err) {
+            console.log(err)
+        } else {
+            res.send(json(notes))
+            console.log("sent data")
+        }
+    })
+})
+
 app.get("/allNotes/dokugo90@gmail.com", (req, res) => {
     res.status(500).send("Error getting data")
     const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
-    
 
     usersNotes.find(function(err, notes) {
         if (err) {
