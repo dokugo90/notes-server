@@ -68,6 +68,10 @@ const notesSchema = new mongoose.Schema({
     })
 })*/
 
+app.get("/data", (req, res) => {
+    res.send("it works")
+})
+
 app.get("/allNotes/dokugo90@gmail.com", (req, res) => {
     const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
     
