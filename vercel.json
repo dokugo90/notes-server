@@ -32,7 +32,7 @@
             "dest": "server.js"
           },
           {
-            "src": "/allNotes/:email",
+            "src": "/allNotes/dokugo90@gmail.com",
             
             "dest": "server.js"
           },

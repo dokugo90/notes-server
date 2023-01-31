@@ -52,11 +52,11 @@ const notesSchema = new mongoose.Schema({
     }
 })
 
-app.get("/", (req, res) => {
+/*app.get("/", (req, res) => {
     res.send("My server")
-})
+})*/
 
-app.get("/data", (req, res) => {
+/*app.get("/", (req, res) => {
     const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
 
     usersNotes.find(function(err, notes) {
@@ -66,10 +66,10 @@ app.get("/data", (req, res) => {
             res.send(notes)
         }
     })
-})
+})*/
 
-app.get("/allNotes/:email", (req, res) => {
-    const usersNotes = mongoose.model(`${req.params.email}`, notesSchema)
+app.get("/allNotes/dokugo90@gmail.com", (req, res) => {
+    const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
     
 
     usersNotes.find(function(err, notes) {
