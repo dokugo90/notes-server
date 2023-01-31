@@ -11,7 +11,7 @@
     "routes": [
         {
           
-            "src": "/",
+            "src": "/hello",
             
             "dest": "server.js"
           },

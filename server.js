@@ -52,9 +52,9 @@ const notesSchema = new mongoose.Schema({
     }
 })
 
-/*app.get("/", (req, res) => {
-    res.send("My server")
-})*/
+app.get("/hello", (req, res) => {
+    res.send("It should work")
+})
 
 /*app.get("/", (req, res) => {
     const usersNotes = mongoose.model(`dokugo90@gmail.com`, notesSchema)
