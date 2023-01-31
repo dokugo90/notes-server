@@ -35,6 +35,11 @@
             "src": "/allNotes/:email",
             
             "dest": "server.js"
+          },
+          {
+            "src": "/data",
+            
+            "dest": "server.js"
           }
       ]
   }
