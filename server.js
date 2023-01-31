@@ -78,9 +78,9 @@ app.get("/notes", (req, res) => {
     usersNotes.find(function(err, notes) {
         if (err) {
             console.log(err)
-            res.send(err)
+            res.send("Error Fetching")
         } else {
-            res.send(notes)
+            res.send("Feteched Data")
             console.log("sent data")
         }
     })
