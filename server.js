@@ -81,6 +81,7 @@ app.get("/allNotes/dokugo90@gmail.com", (req, res) => {
             console.log(err)
         } else {
             res.json(notes)
+            console.log("sent data")
         }
     })
 })
