@@ -79,7 +79,7 @@ app.get("/notes", (req, res) => {
         if (err) {
             console.log(err)
         } else {
-            res.send(json(notes))
+            res.send(notes)
             console.log("sent data")
         }
     })
